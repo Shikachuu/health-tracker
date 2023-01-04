@@ -30,7 +30,9 @@ func NewGetMaxCommand() *cobra.Command {
 
 				b := bucket.Get([]byte(args[0]))
 				json.Unmarshal(b, &character)
+
 				fmt.Println(character.Health)
+
 				return nil
 			})
 		},

@@ -13,6 +13,8 @@ func RootCommand() *cobra.Command {
 	cmd.AddCommand(NewCharacterCommand())
 	cmd.AddCommand(NewGetMaxCommand())
 	cmd.AddCommand(NewGetCurrentCommand())
+	cmd.AddCommand(NewDamageCommand())
+	cmd.AddCommand(NewHealCommand())
 
 	return cmd
 }
