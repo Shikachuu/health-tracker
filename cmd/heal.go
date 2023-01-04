@@ -15,7 +15,7 @@ func NewHealCommand() *cobra.Command {
 
 	return &cobra.Command{
 		Use:     "get-current",
-		Short:   "Get character's current HP",
+		Short:   "Heal a character",
 		Aliases: []string{"h"},
 		Args:    cobra.ExactArgs(2),
 		PreRunE: func(_ *cobra.Command, _ []string) error {

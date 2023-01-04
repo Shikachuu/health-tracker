@@ -29,8 +29,9 @@ func NewCharacterCommand() *cobra.Command {
 			}
 
 			encChar, err := json.Marshal(model.Character{
-				Health: health,
-				HPLog:  []int{},
+				Health:          health,
+				TemporaryHealth: 0,
+				HPLog:           []int{},
 			})
 			if err != nil {
 				return err
