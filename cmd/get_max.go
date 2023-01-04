@@ -15,7 +15,7 @@ func NewGetMaxCommand() *cobra.Command {
 	return &cobra.Command{
 		Use:     "get-max",
 		Short:   "Get character's max HP",
-		Aliases: []string{"gm"},
+		Aliases: []string{"gm", "m"},
 		Args:    cobra.ExactArgs(1),
 		PreRunE: func(_ *cobra.Command, _ []string) error {
 			var err error

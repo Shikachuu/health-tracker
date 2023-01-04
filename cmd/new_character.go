@@ -15,7 +15,7 @@ func NewCharacterCommand() *cobra.Command {
 	return &cobra.Command{
 		Use:     "new-character",
 		Short:   "Generate new character",
-		Aliases: []string{"nc", "new"},
+		Aliases: []string{"nc", "new", "n"},
 		Args:    cobra.ExactArgs(2),
 		PreRunE: func(_ *cobra.Command, _ []string) error {
 			var err error

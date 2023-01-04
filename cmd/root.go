@@ -12,6 +12,7 @@ func RootCommand() *cobra.Command {
 
 	cmd.AddCommand(NewCharacterCommand())
 	cmd.AddCommand(NewGetMaxCommand())
+	cmd.AddCommand(NewGetCurrentCommand())
 
 	return cmd
 }
